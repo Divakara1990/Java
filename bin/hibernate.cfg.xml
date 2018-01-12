@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Below 3 lines used similar to import statements in java 
+i.e to use the user defined tags which is present in the 
+XSD(XML Schema Definition) or DTD(Document Type Definition) files -->
+
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+	
+	<!-- root tag for hibernate -->
+	<hibernate-configuration>
+		<session-factory>
+			<property name= "connection.username">root</property>
+			<property name= "connection.password">root</property>
+			<property name= "connection.url">jdbc:mysql://localhost:3306/sports</property>
+			<property name= "connection.driver_class">com.mysql.jdbc.Driver</property>
+			<property name= "show_sql">true</property>
+		</session-factory>
+	
+	</hibernate-configuration>
